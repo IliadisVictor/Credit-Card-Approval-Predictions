@@ -13,3 +13,29 @@ At present, with the development of machine learning algorithms. More predictive
 Build a classification machine learning model to predict if an application for the issuance of a credit card should be accepted or not , based on the clients historical data labeling him as a good or bad client.
 
 ## Data 
+Two Datasets :
+* First Dataset application_record offer general information on the client. 18 columns for 438557 rows-clients.
+* Second Dataset Historical data on client's credit behavior. 1048575 rows which contain information on the status of a payment x-months back from "today" for y client.
+
+## Preparing Data
+1. Remove missing data.
+2. Drop Duplicates in application_record
+3. Merge categories in categorical data
+4. Dummy Variables encoding
+5. Engineer variables
+6. Remove outliers
+7. Merge dataset
+
+## Target Variable
+We are going to assume that a client is a undesired client unfit for a credit card if one of the following is true :
+* He has delayed payments of over 3 months in his credit record .
+* The amount of times he delayed to pay from 1 month to 3 months , exceeds the amount of times he payed on time.
+
+## Models Preparation
+1. Industry standard born from the credit card scoring , **weight of evidence** and **information value** to evaluate which features hold enough predictive power to be used in our models.
+2. Split data to train and test 0.3 train to 0.7 test.
+3. Scale Features with MinMax .
+4. Target Variable imbalance 0.85 false to 0.15 true , dealt with **SMOTE**
+
+## Models Run
+Logistic Regression, K-Nearest Neighbors, Support Vector Machine (SVM), Decision Tree, Random Forest, XGBoost and CatBoost 
