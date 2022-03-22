@@ -9,6 +9,7 @@ Credit score cards use personal information and data submitted by credit card ap
 At present, with the development of machine learning algorithms. More predictive methods such as Boosting, Random Forest, and Support Vector Machines have been introduced into credit card scoring. However, these methods often do not have good transparency. It may be difficult to provide customers and regulators with a reason for rejection or acceptance , so the models must be used as a supplement on the evaluation of the application and not simply as a yes or no mechanism.
 
 ## Project Objective
+**The process described below can be found in notebook.ipynb the data transformation titled file was used for class assignment purposes particularly loading the data in a warehouse creating a star schema and exporting it to Power BI**
 
 Build a classification machine learning model to predict if an application for the issuance of a credit card should be accepted or not , based on the clients historical data labeling him as a good or bad client.
 
